@@ -2,7 +2,7 @@
 
  📑 Conteúdo
 
-[Objetivo do Projeto](##objetivo-do-projeto)
+<a href="#objetivo-do-projeto"> 🎯 Objetivo do Projeto</a>
 
 [Tecnologias Utilizadas](##tecnologias-utilizadas)
 
@@ -24,7 +24,7 @@ Arquivos de Dados
 
 ***
 
-## 🎯 Objetivo do Projeto
+# 🎯 Objetivo do Projeto
 
 Este projeto foi desenvolvido para apoiar a tomada de decisão estratégica da empresa American Autos, uma empresa fictícia do setor automotivo.
 
@@ -47,3 +47,5 @@ O projeto foi desenvolvido utilizando ferramentas amplamente usadas em projetos 
 * Tableau – visualização e criação de dashboard
 
 * Git e GitHub – versionamento e documentação do projeto
+
+***
