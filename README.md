@@ -2,9 +2,9 @@
 
  📑 Conteúdo
 
-[Objetivo do Projeto](#objetivo-do-projeto)
+[Objetivo do Projeto](##objetivo-do-projeto)
 
-[Tecnologias Utilizadas](#tecnologias-utilizadas)
+[Tecnologias Utilizadas](##tecnologias-utilizadas)
 
 Estrutura do Projeto
 
