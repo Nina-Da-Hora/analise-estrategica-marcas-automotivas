@@ -3,14 +3,16 @@
 ## 📑 Conteúdo
 
 - 🎯 [Objetivo do Projeto](#-objetivo-do-projeto)
+- 📊 Dataset
 - 🛠️ [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
 - 📂 [Estrutura do Projeto](#-estrutura-do-projeto)
 - 🔄 [Pipeline de Dados](#-pipeline-de-dados)
-- 📈 Visualização de Dados
-- 💡 Insights do Negócio
+- 🧹 Limpeza e Tratamento de Dados
+- 💡 [Insights do Negócio](#-principais-insights)
+- 📈 [Visualização de Dados](#-dashboard)
 - 📉 Recomendação Estratégica
-- 📦 Release
-
+- 📦 [Release](#-release)
+- 👥 [Equipe do Projeto](#-equipe-do-projeto)
 ---
 
 ## 🎯 Objetivo do Projeto
@@ -86,3 +88,18 @@ Conteúdo disponível:
 
 Esses arquivos foram disponibilizados separadamente para facilitar o download e reprodução do projeto.
 
+---
+
+## 👥 Equipe do Projeto
+Projeto desenvolvido pelo grupo **Nina da Hora**
+
+| Nome | Função no Projeto |
+|-----|-----|
+| Francielle | Product Owner |
+| Gisela | Data Engineering |
+| Ingrid | Data Visualization |
+| Luana | Business Analysis |
+| Pãmella | Business Analysis |
+| Tatiana | Business Analysis |
+| Vanelle| Business Analysis |
+| Vanessa | Business Analysis |
