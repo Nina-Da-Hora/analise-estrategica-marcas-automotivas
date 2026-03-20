@@ -11,7 +11,7 @@
 - 💡 [Principais Insights do Negócio](#-principais-insights-do-negócio)
 - 📈 [Visualização de Dados](#-visualização-de-dados)
 - 📉 [Recomendação Estratégica](#-recomendação-estratégica)
-- ⚙️ [Como Executar o Projeto](#-executar-o-projeto)
+- ⚙️ [Como Executar o Projeto](#como-executar-o-projeto)
 - 📦 [Release](#-release)
 - 👥 [Equipe do Projeto](#-equipe-do-projeto)
 ---
@@ -157,7 +157,8 @@ Recomendações:
 Essa decisão permite uma melhor alocação de recursos e aumento da eficiência operacional.
 
 ---
-## ⚙️ Executar o Projeto
+
+## ⚙️ Como Executar o Projeto
 
 Clonar o repositório
 
