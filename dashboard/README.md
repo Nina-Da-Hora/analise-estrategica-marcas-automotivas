@@ -1,105 +1,121 @@
-# 📊 Análise Estratégica de Marcas Automotivas
+# 📊 Dashboard de Análise de Marcas Automotivas
 
-## 📑 Conteúdo
+## 📌 Objetivo
 
-- 🎯 [Objetivo do Projeto](#-objetivo-do-projeto)
-- 📊 Dataset
-- 🛠️ [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
-- 📂 [Estrutura do Projeto](#-estrutura-do-projeto)
-- 🔄 [Pipeline de Dados](#-pipeline-de-dados)
-- 🧹 Limpeza e Tratamento de Dados
-- 💡 [Insights do Negócio](#-principais-insights)
-- 📈 [Visualização de Dados](#-dashboard)
-- 📉 Recomendação Estratégica
-- 📦 [Release](#-release)
-- 👥 [Equipe do Projeto](#-equipe-do-projeto)
----
+Este dashboard tem como objetivo identificar quais marcas do portfólio apresentam baixo desempenho e devem ser avaliadas para possível descontinuação.
 
-## 🎯 Objetivo do Projeto
+A análise busca entender se todas as marcas geram valor proporcional ao capital investido, considerando métricas como volume de vendas, receita, participação de mercado e eficiência comercial.
 
-Este projeto foi desenvolvido para apoiar a tomada de decisão estratégica da empresa **American Autos**, uma empresa fictícia do setor automotivo.
-
-A empresa deseja avaliar o desempenho das marcas de veículos presentes em seu estoque para identificar marcas com **baixa performance de vendas**.
-
-A partir da análise dos dados, o objetivo é fornecer uma **recomendação baseada em dados** para a diretoria da empresa, indicando qual marca deve ser **descontinuada do estoque** devido ao baixo desempenho no mercado.
+O foco é apoiar decisões estratégicas relacionadas à otimização do portfólio, eliminando marcas pouco rentáveis e priorizando aquelas que geram maior retorno para o negócio.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📊 Análise Estratégica
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
-![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+Iniciamos a análise explorando os principais KPIs do negócio, como receita total, volume de vendas, preço médio e vendas acumuladas no ano.
 
-### 📦 Bibliotecas Python
+Observamos uma receita de aproximadamente **$7,2 milhões**, com mais de **529 mil vendas** e um **preço médio em torno de $13 mil**, evidenciando uma operação com alto volume de transações. No entanto, esses indicadores oferecem apenas uma visão consolidada, sem detalhar como o desempenho está distribuído dentro do portfólio.
 
-- 🟢 **NumPy** – cálculos e arrays numéricos  
-- 🟢 **IPython.display** – exibição formatada de DataFrames  
-- 🟢 **SQLAlchemy** – manipulação do banco de dados SQLite
----
-## 🗂 Estrutura do Projeto
- ```
-analise-estrategica-marcas-automotivas
-│
-├── data
-│   ├── silver      → dados limpos após tratamento
-│   ├── gold        → dados prontos para análise
-│   └── kpis        → datasets utilizados no dashboard
-│
-├── notebooks       → notebooks de análise em Python
-│
-└── documents       → documentação e materiais do projeto
- ```
----
+Diante disso, retomamos a pergunta central do projeto:
 
-## 🔄 Pipeline de Dados
-
-O projeto segue uma arquitetura inspirada no modelo **Medallion Architecture**, que organiza os dados em diferentes camadas de processamento.
-
-Bronze → Silver → Gold
-
-**Descrição das camadas:**
-
-- **Bronze** – dados brutos provenientes da fonte original.
-- **Silver** – dados limpos e transformados após processos de tratamento.
-- **Gold** – dados preparados para análise e cálculo de métricas.
-  
-A partir da camada **Gold**, foram calculados os **KPIs** utilizados na análise e no desenvolvimento do **dashboard no Tableau**.
-
----
-## 💡 Principais Insights
----
-## 📊 Dashboard
-
----
-## ⚙️ Como executar o projeto
----
-## 📦 Release
-
-Os arquivos de dados utilizados no projeto estão disponíveis na seção **Releases** deste repositório.
-
-Conteúdo disponível:
-
-- **car_prices_bronze.csv** – dados brutos utilizados na análise
-- **car_prices_final.db** – banco de dados criado após o processo de transformação
-
-Esses arquivos foram disponibilizados separadamente para facilitar o download e reprodução do projeto.
+> **Quais marcas realmente geram valor e quais devem ser descontinuadas por baixa performance?**
 
 ---
 
-## 👥 Equipe do Projeto
-Projeto desenvolvido pelo grupo **Nina da Hora**
+## 🌍 Distribuição Geográfica
 
-| Nome | Função no Projeto |
-|-----|-----|
-| Francielle | Product Owner |
-| Gisela | Data Engineering |
-| Ingrid | Data Visualization |
-| Luana | Business Analysis |
-| Pãmella | Business Analysis |
-| Tatiana | Business Analysis |
-| Vanelle| Business Analysis |
-| Vanessa | Business Analysis |
+A análise regional revelou diferenças importantes no desempenho:
+
+* A região **Sul concentra a maior parte das vendas**
+* Regiões como **Oeste e Centro-Oeste** apresentam desempenho intermediário
+* A região **Norte possui menor volume de vendas**
+
+Esse cenário evidencia oportunidades tanto de **fortalecimento nas regiões consolidadas** quanto de **expansão nas regiões com menor desempenho**.
+
+---
+
+## 📅 Sazonalidade das Vendas
+
+Ao analisar o comportamento ao longo do tempo, identificamos um padrão de sazonalidade:
+
+* **Picos:** janeiro, fevereiro e junho
+* **Quedas:** abril e julho
+
+Esse padrão permite um planejamento comercial mais estratégico ao longo do ano.
+
+---
+
+## 🚗 Análise de Modelos e Preço
+
+No ranking de modelos, observamos diferenças no volume de vendas, com alguns modelos apresentando baixa representatividade, o que reforça a necessidade de análise mais aprofundada no nível de marca.
+
+Além disso, identificamos uma **correlação inversa entre quilometragem e preço**: quanto maior o odômetro, menor o valor do veículo.
+
+Essa desvalorização é mais acentuada nos primeiros intervalos, indicando uma queda mais rápida no início do uso, refletindo o impacto do desgaste na percepção de valor do consumidor.
+
+---
+
+## 📉 Eficiência Comercial e Market Share
+
+Um dos principais alertas da análise foi que:
+
+➡️ **51,33% das vendas estão abaixo do valor de mercado (MMR)**
+
+Isso evidencia uma perda significativa de margem e uma oportunidade direta de melhoria na eficiência comercial.
+
+Ao analisar o market share:
+
+* Algumas marcas concentram grande parte das vendas
+* Outras possuem baixa participação
+
+Esse cenário reforça a necessidade de revisão do **portfólio e da estratégia de precificação**.
+
+---
+
+## 🏷️ Impacto da Condição do Veículo
+
+A condição do veículo mostrou impacto direto na formação do preço:
+
+* Veículos em melhor estado → maior valor
+* Veículos em pior condição → maior desvalorização
+
+---
+
+## 💡 Insights Estratégicos por Marca
+
+Ao aprofundar a análise por marca, identificamos diferenças relevantes na contribuição para o resultado do negócio:
+
+* Marcas como **Ferrari, Lamborghini e Aston Martin** apresentam baixo volume, porém **alta relevância em receita** (alto valor agregado)
+
+* Marcas como **Daewoo, Geo e Lotus** possuem baixo volume e baixa contribuição em receita, indicando possível ineficiência na alocação de capital
+
+---
+
+## 📊 Análise de Pareto (80/20)
+
+Para sustentar essa análise, aplicamos o princípio de Pareto, evidenciando de forma objetiva a baixa performance de algumas marcas do portfólio.
+
+A análise revelou que:
+
+* A **Daewoo** registrou apenas **2 vendas**, com cerca de **$900 em receita**
+* A **Geo** apresentou **19 vendas**, com aproximadamente **$10 mil em receita**
+* A **Lotus** registrou apenas **1 venda**, com cerca de **$40 mil em receita**
+
+Esses resultados confirmam a baixa representatividade dessas marcas e reforçam a ineficiência na alocação de capital.
+
+Diante disso, recomendamos:
+
+* **Descontinuação da marca Daewoo**, direcionando esforços para marcas com melhor desempenho e maior potencial de retorno
+* **Avaliação da descontinuação das marcas Geo e Lotus**, que também apresentam baixa participação e baixo volume de vendas
+
+Essa análise reforça a importância de concentrar recursos nas marcas que realmente geram valor para o negócio.
+
+---
+
+## 🚀 Conclusão
+
+A análise evidencia que nem todas as marcas contribuem de forma eficiente para o resultado do negócio.
+
+A partir dos insights obtidos, recomenda-se a **descontinuação da marca Daewoo** e a **avaliação da permanência das marcas Geo e Lotus**, visando otimizar a alocação de recursos e maximizar o retorno do portfólio.
+
+O dashboard fornece suporte para decisões estratégicas orientadas por dados, com foco na geração de valor e na eficiência do negócio.
