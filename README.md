@@ -3,25 +3,46 @@
 ## 📑 Conteúdo
 
 - 🎯 [Objetivo do Projeto](#-objetivo-do-projeto)
-- 📊 Dataset
+- 📊 [Dataset](#-dataset)
 - 🛠️ [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
 - 📂 [Estrutura do Projeto](#-estrutura-do-projeto)
 - 🔄 [Pipeline de Dados](#-pipeline-de-dados)
-- 🧹 Limpeza e Tratamento de Dados
-- 💡 [Insights do Negócio](#-principais-insights)
-- 📈 [Visualização de Dados](#-dashboard)
-- 📉 Recomendação Estratégica
+- 🧹 [Limpeza e Tratamento de Dados](#-limpeza-e-tratamento-de-dados)
+- 💡 [Principais Insights do Negócio](#-principais-insights-do-negócio)
+- 📈 [Visualização de Dados](#-visualização-de-dados)
+- 📉 [Recomendação Estratégica](#-recomendação-estratégica)
+-  ⚙️ [Como executar o projeto](#-como-executar-o-projeto)
 - 📦 [Release](#-release)
 - 👥 [Equipe do Projeto](#-equipe-do-projeto)
 ---
 
 ## 🎯 Objetivo do Projeto
 
-Este projeto foi desenvolvido para apoiar a tomada de decisão estratégica da empresa **American Autos**, uma empresa fictícia do setor automotivo.
+Este projeto foi desenvolvido para apoiar a tomada de decisão estratégica da empresa fictícia American Autos, do setor automotivo.
 
-A empresa deseja avaliar o desempenho das marcas de veículos presentes em seu estoque para identificar marcas com **baixa performance de vendas**.
+O objetivo é avaliar o desempenho das marcas presentes no portfólio e identificar aquelas com baixa performance de vendas.
 
-A partir da análise dos dados, o objetivo é fornecer uma **recomendação baseada em dados** para a diretoria da empresa, indicando qual marca deve ser **descontinuada do estoque** devido ao baixo desempenho no mercado.
+A partir da análise dos dados, buscamos responder:
+
+Quais marcas devem ser descontinuadas por não gerar valor proporcional ao capital investido?
+
+---
+📊 Dataset
+
+O dataset contém informações sobre vendas de veículos, incluindo:
+
+Marca e modelo
+
+Estado e região
+
+Preço de venda e preço de mercado (MMR)
+
+Quilometragem
+
+Condição do veículo
+
+Data da venda
+
 
 ---
 
@@ -40,53 +61,117 @@ A partir da análise dos dados, o objetivo é fornecer uma **recomendação base
 - 🟢 **IPython.display** – exibição formatada de DataFrames  
 - 🟢 **SQLAlchemy** – manipulação do banco de dados SQLite
 ---
-## 🗂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
  ```
-analise-estrategica-marcas-automotivas
-│
-├── data
-│   ├── silver      → dados limpos após tratamento
-│   ├── gold        → dados prontos para análise
-│   └── kpis        → datasets utilizados no dashboard
-│
-├── notebooks       → notebooks de análise em Python
-│
-└── documents       → documentação e materiais do projeto
+analise-estrategica-marcas-automotivas/
+│── data/
+│     ├── silver/                               → dados limpos
+│     ├── gold/                                 → dados prontos para análise
+│     └── kpis/                                 → datasets do dashboard
+│── notebooks/                                  → análises em Python
+│── sql/                                        → queries SQL utilizadas
+│── tableau/                                    → dashboard final
+│── data_quality/                               → relatório de qualidade de dados (PDF)
+│── analysis/                                   → arquivos auxiliares (Excel)
+│── documents/                                  → documentação e materiais de apoio
+│── presentation_images/                        → imagens utilizadas na apresentação
+│── README.md
+└── requirements.txt
  ```
 ---
 
 ## 🔄 Pipeline de Dados
 
-O projeto segue uma arquitetura inspirada no modelo **Medallion Architecture**, que organiza os dados em diferentes camadas de processamento.
+O projeto segue uma arquitetura inspirada no modelo Medallion Architecture:
 
 Bronze → Silver → Gold
 
-**Descrição das camadas:**
+🔹 Camadas:
 
-- **Bronze** – dados brutos provenientes da fonte original.
-- **Silver** – dados limpos e transformados após processos de tratamento.
-- **Gold** – dados preparados para análise e cálculo de métricas.
-  
-A partir da camada **Gold**, foram calculados os **KPIs** utilizados na análise e no desenvolvimento do **dashboard no Tableau**.
+Bronze → dados brutos
+
+Silver → dados limpos e tratados
+
+Gold → dados prontos para análise
+
+A partir da camada Gold, foram gerados os KPIs utilizados no dashboard.
+
+---
+## 🧹 Limpeza e Tratamento de Dados
+
+Foram aplicadas diversas etapas de limpeza e validação, incluindo:
+
+Remoção de VIN inválidos e duplicados
+
+Validação de anos
+
+Tratamento de valores nulos e inconsistentes
+
+Padronização de marcas e modelos
+
+Análise de outliers (IQR)
+
+Criação de variáveis derivadas (ano e mês de venda)
+
+O pipeline foi estruturado para garantir qualidade e consistência dos dados.
 
 ---
 ## 💡 Principais Insights
----
-## 📊 Dashboard
+A análise revelou:
+
+Concentração de vendas em determinadas regiões
+
+Sazonalidade ao longo do ano
+
+Alta porcentagem de vendas abaixo do valor de mercado (MMR)
+
+Diferenças relevantes de desempenho entre marcas
+
+Além disso, foi aplicado o princípio de Pareto (80/20) para identificar marcas com baixa contribuição.
 
 ---
+## 📈 Visualização de Dados
+
+Os insights foram consolidados em um dashboard no Tableau, permitindo:
+
+Análise por região
+
+Comparação entre marcas
+
+Evolução temporal das vendas
+
+Identificação de oportunidades estratégicas
+
+---
+📉 Recomendação Estratégica
+
+A análise evidenciou que nem todas as marcas contribuem de forma eficiente para o resultado do negócio.
+
+Recomendações:
+
+❌ Descontinuar a marca Daewoo
+
+⚠️ Avaliar a descontinuação de Geo e Lotus
+
+Essa decisão permite uma melhor alocação de recursos e aumento da eficiência operacional.
+
+---
+
 ## ⚙️ Como executar o projeto
+Clonar o repositório
+
+Instalar as dependências (requirements.txt)
+
+Executar os notebooks na pasta /notebooks
+
 ---
 ## 📦 Release
 
-Os arquivos de dados utilizados no projeto estão disponíveis na seção **Releases** deste repositório.
+Os arquivos de dados estão disponíveis na seção Releases:
 
-Conteúdo disponível:
+car_prices_bronze.csv → dados brutos
 
-- **car_prices_bronze.csv** – dados brutos utilizados na análise
-- **car_prices_final.db** – banco de dados criado após o processo de transformação
-
-Esses arquivos foram disponibilizados separadamente para facilitar o download e reprodução do projeto.
+car_prices_final.db → base transformada
 
 ---
 
@@ -97,9 +182,9 @@ Projeto desenvolvido pelo grupo **Nina da Hora**
 |-----|-----|
 | Francielle | Product Owner |
 | Gisela | Data Engineering |
-| Ingrid | Data Visualization |
-| Luana | Business Analysis |
-| Pãmella | Business Analysis |
-| Tatiana | Business Analysis |
-| Vanelle| Business Analysis |
-| Vanessa | Business Analysis |
+| Ingrid | Analista de Dados |
+| Luana | Data Engineering |
+| Pãmella | Analista de Dados |
+| Tatiana | Analista de Negócios |
+| Vanelle| Analista BI |
+| Vanessa | Data Engineering |
