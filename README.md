@@ -72,9 +72,8 @@ analise-estrategica-marcas-automotivas/
 │── sql/                                        → queries SQL utilizadas
 │── tableau/                                    → dashboard final
 │── data_quality/                               → relatório de qualidade de dados (PDF)
-│── analysis/                                   → arquivos auxiliares (Excel)
+│── analysis/                                   → arquivos auxiliares
 │── documents/                                  → documentação e materiais de apoio
-│── presentation_images/                        → imagens utilizadas na apresentação
 │── README.md
 └── requirements.txt
  ```
@@ -184,7 +183,7 @@ Projeto desenvolvido pelo grupo **Nina da Hora**
 | Gisela | Data Engineering |
 | Ingrid | Analista de Dados |
 | Luana | Data Engineering |
-| Pãmella | Analista de Dados |
+| Pâmella | Analista de Dados |
 | Tatiana | Analista de Negócios |
 | Vanelle| Analista BI |
 | Vanessa | Data Engineering |
