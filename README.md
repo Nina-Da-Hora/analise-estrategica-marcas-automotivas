@@ -11,7 +11,7 @@
 - 💡 [Principais Insights do Negócio](#-principais-insights-do-negócio)
 - 📈 [Visualização de Dados](#-visualização-de-dados)
 - 📉 [Recomendação Estratégica](#-recomendação-estratégica)
-- ⚙️ [Como Executar o Projeto](#como-executar-o-projeto)
+- ⚙️ [Como Executar o Projeto](#%EF%B8%8F-como-executar-o-projeto)
 - 📦 [Release](#-release)
 - 👥 [Equipe do Projeto](#-equipe-do-projeto)
 ---
