@@ -11,7 +11,7 @@
 - 💡 [Principais Insights do Negócio](#-principais-insights-do-negócio)
 - 📈 [Visualização de Dados](#-visualização-de-dados)
 - 📉 [Recomendação Estratégica](#-recomendação-estratégica)
-- ⚙️ [Como executar o projeto](#-como-executar-o-projeto)
+- ⚙️ [Como Executar o Projeto](#-executar-o-projeto)
 - 📦 [Release](#-release)
 - 👥 [Equipe do Projeto](#-equipe-do-projeto)
 ---
@@ -27,7 +27,8 @@ A partir da análise dos dados, buscamos responder:
 Quais marcas devem ser descontinuadas por não gerar valor proporcional ao capital investido?
 
 ---
-📊 Dataset
+
+## 📊 Dataset
 
 O dataset contém informações sobre vendas de veículos, incluindo:
 
@@ -116,7 +117,7 @@ Criação de variáveis derivadas (ano e mês de venda)
 O pipeline foi estruturado para garantir qualidade e consistência dos dados.
 
 ---
-## 💡 Principais Insights
+## 💡 Principais Insights do Negócio
 A análise revelou:
 
 Concentração de vendas em determinadas regiões
@@ -156,8 +157,8 @@ Recomendações:
 Essa decisão permite uma melhor alocação de recursos e aumento da eficiência operacional.
 
 ---
+## ⚙️ Executar o Projeto
 
-## ⚙️ Como executar o projeto
 Clonar o repositório
 
 Instalar as dependências (requirements.txt)
