@@ -11,7 +11,7 @@
 - 💡 [Principais Insights do Negócio](#-principais-insights-do-negócio)
 - 📈 [Visualização de Dados](#-visualização-de-dados)
 - 📉 [Recomendação Estratégica](#-recomendação-estratégica)
--  ⚙️ [Como executar o projeto](#-como-executar-o-projeto)
+- ⚙️ [Como executar o projeto](#-como-executar-o-projeto)
 - 📦 [Release](#-release)
 - 👥 [Equipe do Projeto](#-equipe-do-projeto)
 ---
@@ -143,7 +143,7 @@ Evolução temporal das vendas
 Identificação de oportunidades estratégicas
 
 ---
-📉 Recomendação Estratégica
+## 📉 Recomendação Estratégica
 
 A análise evidenciou que nem todas as marcas contribuem de forma eficiente para o resultado do negócio.
 
