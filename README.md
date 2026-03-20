@@ -73,6 +73,7 @@ analise-estrategica-marcas-automotivas/
 │── tableau/                                    → dashboard final
 │── data_quality/                               → relatório de qualidade de dados (PDF)
 │── analysis/                                   → arquivos auxiliares
+│── dashboard/                                  → arquivos e imagens do dashboard com análises e insights estratégicos
 │── documents/                                  → documentação e materiais de apoio
 │── README.md
 └── requirements.txt
