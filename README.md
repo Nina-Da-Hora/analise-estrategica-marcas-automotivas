@@ -124,7 +124,7 @@ O pipeline foi estruturado para garantir qualidade e consistência dos dados.
 ## 💡 Principais Insights do Negócio
 A análise revelou:
 
-Concentração de vendas em determinadas regiões
+- Concentração de vendas em determinadas regiões
 
 - Sazonalidade ao longo do ano
 
