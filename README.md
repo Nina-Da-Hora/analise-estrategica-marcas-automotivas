@@ -32,17 +32,21 @@ Quais marcas devem ser descontinuadas por não gerar valor proporcional ao capit
 
 O dataset contém informações sobre vendas de veículos, incluindo:
 
-Marca e modelo
+- Marca e modelo
 
-Estado e região
+- Estado e região
 
-Preço de venda e preço de mercado (MMR)
+- Preço de venda e preço de mercado (MMR)
 
-Quilometragem
+- Quilometragem
 
-Condição do veículo
+- Condição do veículo
 
-Data da venda
+- Data da venda
+
+- Mês Venda
+
+- Ano Venda
 
 
 ---
@@ -91,9 +95,9 @@ Bronze → Silver → Gold
 
 Bronze → dados brutos
 
-Silver → dados limpos e tratados
+- Silver → dados limpos e tratados
 
-Gold → dados prontos para análise
+- Gold → dados prontos para análise
 
 A partir da camada Gold, foram gerados os KPIs utilizados no dashboard.
 
@@ -102,17 +106,17 @@ A partir da camada Gold, foram gerados os KPIs utilizados no dashboard.
 
 Foram aplicadas diversas etapas de limpeza e validação, incluindo:
 
-Remoção de VIN inválidos e duplicados
+- Remoção de VIN inválidos e duplicados
 
-Validação de anos
+- Validação de anos
 
-Tratamento de valores nulos e inconsistentes
+- Tratamento de valores nulos e inconsistentes
 
-Padronização de marcas e modelos
+- Padronização de marcas e modelos
 
-Análise de outliers (IQR)
+- Análise de outliers (IQR)
 
-Criação de variáveis derivadas (ano e mês de venda)
+- Criação de variáveis derivadas (ano e mês de venda)
 
 O pipeline foi estruturado para garantir qualidade e consistência dos dados.
 
@@ -122,11 +126,11 @@ A análise revelou:
 
 Concentração de vendas em determinadas regiões
 
-Sazonalidade ao longo do ano
+- Sazonalidade ao longo do ano
 
-Alta porcentagem de vendas abaixo do valor de mercado (MMR)
+- Alta porcentagem de vendas abaixo do valor de mercado (MMR)
 
-Diferenças relevantes de desempenho entre marcas
+- Diferenças relevantes de desempenho entre marcas
 
 Além disso, foi aplicado o princípio de Pareto (80/20) para identificar marcas com baixa contribuição.
 
@@ -135,13 +139,13 @@ Além disso, foi aplicado o princípio de Pareto (80/20) para identificar marcas
 
 Os insights foram consolidados em um dashboard no Tableau, permitindo:
 
-Análise por região
+- Análise por região
 
-Comparação entre marcas
+- Comparação entre marcas
 
-Evolução temporal das vendas
+- Evolução temporal das vendas
 
-Identificação de oportunidades estratégicas
+- Identificação de oportunidades estratégicas
 
 ---
 ## 📉 Recomendação Estratégica
@@ -150,9 +154,9 @@ A análise evidenciou que nem todas as marcas contribuem de forma eficiente para
 
 Recomendações:
 
-❌ Descontinuar a marca Daewoo
+- ❌ Descontinuar a marca Daewoo
 
-⚠️ Avaliar a descontinuação de Geo e Lotus
+- ⚠️ Avaliar a descontinuação de Geo e Lotus
 
 Essa decisão permite uma melhor alocação de recursos e aumento da eficiência operacional.
 
@@ -160,20 +164,20 @@ Essa decisão permite uma melhor alocação de recursos e aumento da eficiência
 
 ## ⚙️ Como Executar o Projeto
 
-Clonar o repositório
+- Clonar o repositório
 
-Instalar as dependências (requirements.txt)
+- Instalar as dependências (requirements.txt)
 
-Executar os notebooks na pasta /notebooks
+- Executar os notebooks na pasta /notebooks
 
 ---
 ## 📦 Release
 
 Os arquivos de dados estão disponíveis na seção Releases:
 
-car_prices_bronze.csv → dados brutos
+- car_prices_bronze.csv → dados brutos
 
-car_prices_final.db → base transformada
+- car_prices_final.db → base transformada
 
 ---
 
