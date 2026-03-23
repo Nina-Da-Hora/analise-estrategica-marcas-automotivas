@@ -187,10 +187,10 @@ Projeto desenvolvido pelo grupo **Nina da Hora**
 | Nome | Função no Projeto |
 |-----|-----|
 | Francielle | Product Owner |
-| Gisela | Data Engineering |
+| Gisela | Analista de Dados |
 | Ingrid | Analista de Dados |
-| Luana | Data Engineering |
+| Luana | Engenharia de Dados |
 | Pâmella | Analista de Dados |
 | Tatiana | Analista de Negócios |
 | Vanelle| Analista BI |
-| Vanessa | Data Engineering |
+| Vanessa | Engenharia de Dados|
