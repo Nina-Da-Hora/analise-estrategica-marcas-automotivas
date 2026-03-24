@@ -11,7 +11,7 @@
 - 💡 [Principais Insights do Negócio](#-principais-insights-do-negócio)
 - 📈 [Visualização de Dados](#-visualização-de-dados)
 - 📉 [Recomendação Estratégica](#-recomendação-estratégica)
--  ⚙️ [Como executar o projeto](#-como-executar-o-projeto)
+- ⚙️ [Como Executar o Projeto](#%EF%B8%8F-como-executar-o-projeto)
 - 📦 [Release](#-release)
 - 👥 [Equipe do Projeto](#-equipe-do-projeto)
 ---
@@ -27,21 +27,26 @@ A partir da análise dos dados, buscamos responder:
 Quais marcas devem ser descontinuadas por não gerar valor proporcional ao capital investido?
 
 ---
-📊 Dataset
+
+## 📊 Dataset
 
 O dataset contém informações sobre vendas de veículos, incluindo:
 
-Marca e modelo
+- Marca e modelo
 
-Estado e região
+- Estado e região
 
-Preço de venda e preço de mercado (MMR)
+- Preço de venda e preço de mercado (MMR)
 
-Quilometragem
+- Quilometragem
 
-Condição do veículo
+- Condição do veículo
 
-Data da venda
+- Data da venda
+
+- Mês Venda
+
+- Ano Venda
 
 
 ---
@@ -72,9 +77,9 @@ analise-estrategica-marcas-automotivas/
 │── sql/                                        → queries SQL utilizadas
 │── tableau/                                    → dashboard final
 │── data_quality/                               → relatório de qualidade de dados (PDF)
-│── analysis/                                   → arquivos auxiliares (Excel)
+│── analysis/                                   → arquivos auxiliares
+│── dashboard/                                  → arquivos e imagens do dashboard com análises e insights estratégicos
 │── documents/                                  → documentação e materiais de apoio
-│── presentation_images/                        → imagens utilizadas na apresentação
 │── README.md
 └── requirements.txt
  ```
@@ -90,9 +95,9 @@ Bronze → Silver → Gold
 
 Bronze → dados brutos
 
-Silver → dados limpos e tratados
+- Silver → dados limpos e tratados
 
-Gold → dados prontos para análise
+- Gold → dados prontos para análise
 
 A partir da camada Gold, foram gerados os KPIs utilizados no dashboard.
 
@@ -101,31 +106,31 @@ A partir da camada Gold, foram gerados os KPIs utilizados no dashboard.
 
 Foram aplicadas diversas etapas de limpeza e validação, incluindo:
 
-Remoção de VIN inválidos e duplicados
+- Remoção de VIN inválidos e duplicados
 
-Validação de anos
+- Validação de anos
 
-Tratamento de valores nulos e inconsistentes
+- Tratamento de valores nulos e inconsistentes
 
-Padronização de marcas e modelos
+- Padronização de marcas e modelos
 
-Análise de outliers (IQR)
+- Análise de outliers (IQR)
 
-Criação de variáveis derivadas (ano e mês de venda)
+- Criação de variáveis derivadas (ano e mês de venda)
 
 O pipeline foi estruturado para garantir qualidade e consistência dos dados.
 
 ---
-## 💡 Principais Insights
+## 💡 Principais Insights do Negócio
 A análise revelou:
 
-Concentração de vendas em determinadas regiões
+- Concentração de vendas em determinadas regiões
 
-Sazonalidade ao longo do ano
+- Sazonalidade ao longo do ano
 
-Alta porcentagem de vendas abaixo do valor de mercado (MMR)
+- Alta porcentagem de vendas abaixo do valor de mercado (MMR)
 
-Diferenças relevantes de desempenho entre marcas
+- Diferenças relevantes de desempenho entre marcas
 
 Além disso, foi aplicado o princípio de Pareto (80/20) para identificar marcas com baixa contribuição.
 
@@ -134,44 +139,45 @@ Além disso, foi aplicado o princípio de Pareto (80/20) para identificar marcas
 
 Os insights foram consolidados em um dashboard no Tableau, permitindo:
 
-Análise por região
+- Análise por região
 
-Comparação entre marcas
+- Comparação entre marcas
 
-Evolução temporal das vendas
+- Evolução temporal das vendas
 
-Identificação de oportunidades estratégicas
+- Identificação de oportunidades estratégicas
 
 ---
-📉 Recomendação Estratégica
+## 📉 Recomendação Estratégica
 
 A análise evidenciou que nem todas as marcas contribuem de forma eficiente para o resultado do negócio.
 
 Recomendações:
 
-❌ Descontinuar a marca Daewoo
+- ❌ Descontinuar a marca Daewoo
 
-⚠️ Avaliar a descontinuação de Geo e Lotus
+- ⚠️ Avaliar a descontinuação de Geo e Lotus
 
 Essa decisão permite uma melhor alocação de recursos e aumento da eficiência operacional.
 
 ---
 
-## ⚙️ Como executar o projeto
-Clonar o repositório
+## ⚙️ Como Executar o Projeto
 
-Instalar as dependências (requirements.txt)
+- Clonar o repositório
 
-Executar os notebooks na pasta /notebooks
+- Instalar as dependências (requirements.txt)
+
+- Executar os notebooks na pasta /notebooks
 
 ---
 ## 📦 Release
 
 Os arquivos de dados estão disponíveis na seção Releases:
 
-car_prices_bronze.csv → dados brutos
+- car_prices_bronze.csv → dados brutos
 
-car_prices_final.db → base transformada
+- car_prices_final.db → base transformada
 
 ---
 
@@ -181,10 +187,10 @@ Projeto desenvolvido pelo grupo **Nina da Hora**
 | Nome | Função no Projeto |
 |-----|-----|
 | Francielle | Product Owner |
-| Gisela | Data Engineering |
+| Gisela | Analista de Dados |
 | Ingrid | Analista de Dados |
-| Luana | Data Engineering |
-| Pãmella | Analista de Dados |
+| Luana | Engenharia de Dados |
+| Pâmella | Analista de Dados |
 | Tatiana | Analista de Negócios |
 | Vanelle| Analista BI |
-| Vanessa | Data Engineering |
+| Vanessa | Engenharia de Dados|
