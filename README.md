@@ -80,6 +80,7 @@ analise-estrategica-marcas-automotivas/
 │── analysis/                                   → arquivos auxiliares
 │── dashboard/                                  → arquivos e imagens do dashboard com análises e insights estratégicos
 │── documents/                                  → documentação e materiais de apoio
+│── presentation/                               → documentação e materiais da presentação
 │── README.md
 └── requirements.txt
  ```
