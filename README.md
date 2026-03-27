@@ -1,4 +1,24 @@
-# 📊 Análise Estratégica de Marcas Automotivas
+<h1 align="center">📊 Análise Estratégica de Marcas Automotivas</h1>
+
+## 🎥 Apresentação do Projeto
+Este vídeo apresenta os principais insights e decisões estratégicas do projeto.
+
+Assista no YouTube: 
+<p align="center">
+<a href="https://youtu.be/NSAORv9ZMcc">
+  <img src="assets/thumbnail.png" width="300">
+</a>
+<br>
+ </p>
+Download disponível na aba Releases:
+<br>
+<p align="center">
+<a href="https://github.com/Nina-Da-Hora/analise-estrategica-marcas-automotivas-/releases/tag/Video_Apresenta%C3%A7%C3%A3o">
+  <img src="https://img.shields.io/badge/⬇%20Baixar%20vídeo%20completo-white?logo=github&logoColor=black" height="45">
+</a>
+</p>
+
+---
 
 ## 📑 Conteúdo
 
