@@ -13,7 +13,7 @@ Assista no YouTube:
 Download disponível na aba Releases:
 <br>
 <p align="center">
-<a href="https://github.com/Nina-Da-Hora/analise-estrategica-marcas-automotivas-/releases/tag/Video_Apresenta%C3%A7%C3%A3o">
+<a href="https://github.com/Nina-Da-Hora/analise-estrategica-marcas-automotivas/releases/tag/v1.0-video">
   <img src="https://img.shields.io/badge/⬇%20Baixar%20vídeo%20completo-white?logo=github&logoColor=black" height="45">
 </a>
 </p>
